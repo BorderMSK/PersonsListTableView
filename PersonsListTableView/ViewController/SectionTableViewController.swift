@@ -13,7 +13,7 @@ class SectionTableViewController: UITableViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        tableView.rowHeight = 40
+        tableView.rowHeight = 35
     }
 
     override func numberOfSections(in tableView: UITableView) -> Int {
@@ -33,8 +33,14 @@ class SectionTableViewController: UITableViewController {
     override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let cell = tableView.dequeueReusableCell(withIdentifier: "Cell", for: indexPath)
         let person = person[indexPath.section]
-        cell.textLabel?.text = indexPath.row == 0 ? person.email : person.phoneNumber
+        cell.textLabel?.text = indexPath.row == 0 ? person.phoneNumber : person.email
+        if indexPath.row % 2 == 0 {
+            cell.imageView?.image = UIImage(named: "phonePic")
+        } else{
+        cell.imageView?.image = UIImage(named: "emailPic")
+        }
         return cell
+        
     }
     
 
