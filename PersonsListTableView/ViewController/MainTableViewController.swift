@@ -8,8 +8,8 @@
 import UIKit
 
 class MainTableViewController: UITableViewController {
-    
-    let person = Person.getPerson()
+    var data: Person!
+    var person = Person.getPerson()
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -40,5 +40,22 @@ class MainTableViewController: UITableViewController {
         
         vc.personData = data
         
+    }
+    override func tableView(_ tableView: UITableView, canMoveRowAt indexPath: IndexPath) -> Bool {
+        return true
+    }
+    override func tableView(_ tableView: UITableView, moveRowAt sourceIndexPath: IndexPath, to destinationIndexPath: IndexPath) {
+        
+        person.swapAt(sourceIndexPath.row, destinationIndexPath.row)
+        
+    }
+    
+    @IBAction func editButton(_ sender: Any) {
+        if tableView.isEditing {
+            tableView.isEditing = false
+        }
+        else{
+            tableView.isEditing = true
+        }
     }
 }

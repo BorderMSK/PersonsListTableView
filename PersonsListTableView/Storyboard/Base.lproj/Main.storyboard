@@ -35,7 +35,11 @@
                         </connections>
                     </tableView>
                     <navigationItem key="navigationItem" title="Personal List" id="GE8-bz-K5R">
-                        <barButtonItem key="leftBarButtonItem" systemItem="edit" id="T8l-8l-D9h"/>
+                        <barButtonItem key="leftBarButtonItem" systemItem="edit" id="T8l-8l-D9h">
+                            <connections>
+                                <action selector="editButton:" destination="ntp-oP-EAV" id="ro1-QP-n6D"/>
+                            </connections>
+                        </barButtonItem>
                         <barButtonItem key="rightBarButtonItem" systemItem="add" id="NcD-nn-khu"/>
                     </navigationItem>
                 </tableViewController>

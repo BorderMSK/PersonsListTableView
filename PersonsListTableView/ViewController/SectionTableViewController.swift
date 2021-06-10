@@ -8,19 +8,20 @@
 import UIKit
 
 class SectionTableViewController: UITableViewController {
-
+    
     let person = Person.getPerson()
     
     override func viewDidLoad() {
         super.viewDidLoad()
         tableView.rowHeight = 35
-    }
-
+        
+    }    
+    
     override func numberOfSections(in tableView: UITableView) -> Int {
         
         return person.count
     }
-
+    
     override func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         
         return 2
@@ -35,14 +36,10 @@ class SectionTableViewController: UITableViewController {
         let person = person[indexPath.section]
         cell.textLabel?.text = indexPath.row == 0 ? person.phoneNumber : person.email
         if indexPath.row % 2 == 0 {
-            cell.imageView?.image = UIImage(named: "phonePic")
+            cell.imageView?.image = UIImage(systemName: "phone")
         } else{
-        cell.imageView?.image = UIImage(named: "emailPic")
+            cell.imageView?.image = UIImage(systemName: "envelope")
         }
         return cell
-        
     }
-    
-
-    
 }
