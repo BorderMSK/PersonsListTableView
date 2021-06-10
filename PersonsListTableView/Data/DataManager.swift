@@ -5,8 +5,6 @@
 //  Created by Igor Makeev on 09.06.2021.
 //
 
-import UIKit
-
 class DataManager {
     
     let name = ["Bruce", "John", "Steven", "Aaron", "Tim",

@@ -16,6 +16,7 @@
 		BC9DF1912670E53600D4E276 /* Person.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC9DF1902670E53600D4E276 /* Person.swift */; };
 		BC9DF1932670E71B00D4E276 /* DataManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC9DF1922670E71B00D4E276 /* DataManager.swift */; };
 		BC9DF195267167E000D4E276 /* DetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC9DF194267167E000D4E276 /* DetailViewController.swift */; };
+		BC9DF1972672516A00D4E276 /* SectionTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC9DF1962672516A00D4E276 /* SectionTableViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -30,6 +31,7 @@
 		BC9DF1902670E53600D4E276 /* Person.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Person.swift; sourceTree = "<group>"; };
 		BC9DF1922670E71B00D4E276 /* DataManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataManager.swift; sourceTree = "<group>"; };
 		BC9DF194267167E000D4E276 /* DetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailViewController.swift; sourceTree = "<group>"; };
+		BC9DF1962672516A00D4E276 /* SectionTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SectionTableViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -62,18 +64,59 @@
 		BC9DF1792670DB5200D4E276 /* PersonsListTableView */ = {
 			isa = PBXGroup;
 			children = (
-				BC9DF17A2670DB5200D4E276 /* AppDelegate.swift */,
-				BC9DF17C2670DB5200D4E276 /* SceneDelegate.swift */,
-				BC9DF18E2670DBBA00D4E276 /* MainTableViewController.swift */,
-				BC9DF194267167E000D4E276 /* DetailViewController.swift */,
-				BC9DF1802670DB5200D4E276 /* Main.storyboard */,
+				BC9DF19C267251FE00D4E276 /* Data */,
+				BC9DF19B267251ED00D4E276 /* Delegate */,
+				BC9DF19A267251CC00D4E276 /* Storyboard */,
+				BC9DF1992672519300D4E276 /* Model */,
+				BC9DF1982672517100D4E276 /* ViewController */,
 				BC9DF1832670DB5700D4E276 /* Assets.xcassets */,
-				BC9DF1852670DB5700D4E276 /* LaunchScreen.storyboard */,
 				BC9DF1882670DB5700D4E276 /* Info.plist */,
-				BC9DF1902670E53600D4E276 /* Person.swift */,
-				BC9DF1922670E71B00D4E276 /* DataManager.swift */,
 			);
 			path = PersonsListTableView;
+			sourceTree = "<group>";
+		};
+		BC9DF1982672517100D4E276 /* ViewController */ = {
+			isa = PBXGroup;
+			children = (
+				BC9DF18E2670DBBA00D4E276 /* MainTableViewController.swift */,
+				BC9DF1962672516A00D4E276 /* SectionTableViewController.swift */,
+				BC9DF194267167E000D4E276 /* DetailViewController.swift */,
+			);
+			path = ViewController;
+			sourceTree = "<group>";
+		};
+		BC9DF1992672519300D4E276 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				BC9DF1902670E53600D4E276 /* Person.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		BC9DF19A267251CC00D4E276 /* Storyboard */ = {
+			isa = PBXGroup;
+			children = (
+				BC9DF1802670DB5200D4E276 /* Main.storyboard */,
+				BC9DF1852670DB5700D4E276 /* LaunchScreen.storyboard */,
+			);
+			path = Storyboard;
+			sourceTree = "<group>";
+		};
+		BC9DF19B267251ED00D4E276 /* Delegate */ = {
+			isa = PBXGroup;
+			children = (
+				BC9DF17A2670DB5200D4E276 /* AppDelegate.swift */,
+				BC9DF17C2670DB5200D4E276 /* SceneDelegate.swift */,
+			);
+			path = Delegate;
+			sourceTree = "<group>";
+		};
+		BC9DF19C267251FE00D4E276 /* Data */ = {
+			isa = PBXGroup;
+			children = (
+				BC9DF1922670E71B00D4E276 /* DataManager.swift */,
+			);
+			path = Data;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -150,6 +193,7 @@
 				BC9DF1932670E71B00D4E276 /* DataManager.swift in Sources */,
 				BC9DF1912670E53600D4E276 /* Person.swift in Sources */,
 				BC9DF195267167E000D4E276 /* DetailViewController.swift in Sources */,
+				BC9DF1972672516A00D4E276 /* SectionTableViewController.swift in Sources */,
 				BC9DF18F2670DBBA00D4E276 /* MainTableViewController.swift in Sources */,
 				BC9DF17D2670DB5200D4E276 /* SceneDelegate.swift in Sources */,
 			);

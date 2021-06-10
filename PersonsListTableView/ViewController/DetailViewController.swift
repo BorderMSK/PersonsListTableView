@@ -19,7 +19,6 @@ class DetailViewController: UIViewController{
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        imageView.image = UIImage(named: "userPic")
         nameLabel.text = personData.name
         surnameLabel.text = personData.surname
         phoneNumberLabel.text = personData.phoneNumber
