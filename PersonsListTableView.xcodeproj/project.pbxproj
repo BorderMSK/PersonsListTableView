@@ -17,6 +17,7 @@
 		BC9DF1932670E71B00D4E276 /* DataManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC9DF1922670E71B00D4E276 /* DataManager.swift */; };
 		BC9DF195267167E000D4E276 /* DetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC9DF194267167E000D4E276 /* DetailViewController.swift */; };
 		BC9DF1972672516A00D4E276 /* SectionTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC9DF1962672516A00D4E276 /* SectionTableViewController.swift */; };
+		BC9DF19E2673F65400D4E276 /* AddNewPerson.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC9DF19D2673F65400D4E276 /* AddNewPerson.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -32,6 +33,7 @@
 		BC9DF1922670E71B00D4E276 /* DataManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataManager.swift; sourceTree = "<group>"; };
 		BC9DF194267167E000D4E276 /* DetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailViewController.swift; sourceTree = "<group>"; };
 		BC9DF1962672516A00D4E276 /* SectionTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SectionTableViewController.swift; sourceTree = "<group>"; };
+		BC9DF19D2673F65400D4E276 /* AddNewPerson.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddNewPerson.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -81,6 +83,7 @@
 				BC9DF18E2670DBBA00D4E276 /* MainTableViewController.swift */,
 				BC9DF1962672516A00D4E276 /* SectionTableViewController.swift */,
 				BC9DF194267167E000D4E276 /* DetailViewController.swift */,
+				BC9DF19D2673F65400D4E276 /* AddNewPerson.swift */,
 			);
 			path = ViewController;
 			sourceTree = "<group>";
@@ -196,6 +199,7 @@
 				BC9DF1972672516A00D4E276 /* SectionTableViewController.swift in Sources */,
 				BC9DF18F2670DBBA00D4E276 /* MainTableViewController.swift in Sources */,
 				BC9DF17D2670DB5200D4E276 /* SceneDelegate.swift in Sources */,
+				BC9DF19E2673F65400D4E276 /* AddNewPerson.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
