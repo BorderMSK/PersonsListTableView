@@ -14,7 +14,7 @@ class SectionTableViewController: UITableViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         tableView.rowHeight = 35
-        
+        navigationController?.navigationBar.prefersLargeTitles = true
     }    
     
     override func numberOfSections(in tableView: UITableView) -> Int {

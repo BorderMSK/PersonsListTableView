@@ -8,7 +8,7 @@
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
-        <!--Personal List-->
+        <!--Personals List-->
         <scene sceneID="pYb-cM-N3p">
             <objects>
                 <tableViewController id="ntp-oP-EAV" customClass="MainTableViewController" customModule="PersonsListTableView" customModuleProvider="target" sceneMemberID="viewController">
@@ -34,20 +34,23 @@
                             <outlet property="delegate" destination="ntp-oP-EAV" id="VMf-aO-nlr"/>
                         </connections>
                     </tableView>
-                    <navigationItem key="navigationItem" title="Personal List" id="GE8-bz-K5R">
-                        <barButtonItem key="leftBarButtonItem" systemItem="edit" id="T8l-8l-D9h">
+                    <navigationItem key="navigationItem" title="Personals List" id="GE8-bz-K5R">
+                        <barButtonItem key="leftBarButtonItem" title="Edit" id="T8l-8l-D9h">
                             <connections>
                                 <action selector="editButton:" destination="ntp-oP-EAV" id="ro1-QP-n6D"/>
                             </connections>
                         </barButtonItem>
                         <barButtonItem key="rightBarButtonItem" systemItem="add" id="NcD-nn-khu"/>
                     </navigationItem>
+                    <connections>
+                        <outlet property="editButton" destination="T8l-8l-D9h" id="FVz-gv-si3"/>
+                    </connections>
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="qRJ-SA-Ykp" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="1398.5507246376812" y="95.758928571428569"/>
         </scene>
-        <!--DetailData-->
+        <!--Detail View Controller-->
         <scene sceneID="fRc-mR-DQM">
             <objects>
                 <viewController id="VNV-n7-IXm" customClass="DetailViewController" customModule="PersonsListTableView" customModuleProvider="target" sceneMemberID="viewController">
@@ -140,7 +143,7 @@
                             <constraint firstItem="6zS-MQ-aft" firstAttribute="top" secondItem="kCa-Sx-YpO" secondAttribute="top" constant="58" id="e4y-9f-HkZ"/>
                         </constraints>
                     </view>
-                    <navigationItem key="navigationItem" title="DetailData" id="g6d-bZ-v1f"/>
+                    <navigationItem key="navigationItem" id="g6d-bZ-v1f"/>
                     <connections>
                         <outlet property="emailLabel" destination="fDC-zk-8KS" id="x7k-pJ-wUE"/>
                         <outlet property="imageView" destination="6zS-MQ-aft" id="dEZ-dV-EZQ"/>
@@ -172,7 +175,7 @@
             </objects>
             <point key="canvasLocation" x="488.40579710144931" y="95.758928571428569"/>
         </scene>
-        <!--Section Personal List-->
+        <!--Personals List-->
         <scene sceneID="utk-ZP-zr8">
             <objects>
                 <tableViewController id="ewu-5m-v49" customClass="SectionTableViewController" customModule="PersonsListTableView" customModuleProvider="target" sceneMemberID="viewController">
@@ -195,7 +198,7 @@
                             <outlet property="delegate" destination="ewu-5m-v49" id="eAG-mp-eML"/>
                         </connections>
                     </tableView>
-                    <navigationItem key="navigationItem" title="Section Personal List" id="qKj-Fb-2Sx"/>
+                    <navigationItem key="navigationItem" title="Personals List" id="qKj-Fb-2Sx"/>
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="8zr-Ff-DDY" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>

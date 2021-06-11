@@ -8,12 +8,15 @@
 import UIKit
 
 class MainTableViewController: UITableViewController {
-    var data: Person!
+   
     var person = Person.getPerson()
     
+    @IBOutlet weak var editButton: UIBarButtonItem!
+
     override func viewDidLoad() {
         super.viewDidLoad()
         tableView.rowHeight = 60
+        navigationController?.navigationBar.prefersLargeTitles = true
     }
     
     override func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
@@ -41,22 +44,34 @@ class MainTableViewController: UITableViewController {
         vc.personData = data
         
     }
+    
     override func tableView(_ tableView: UITableView, canMoveRowAt indexPath: IndexPath) -> Bool {
         return true
     }
+    
     override func tableView(_ tableView: UITableView, moveRowAt sourceIndexPath: IndexPath, to destinationIndexPath: IndexPath) {
-        
+        let selectedItem = person[sourceIndexPath.row]
+        person.remove(at: sourceIndexPath.row)
+        person.insert(selectedItem, at: destinationIndexPath.row)
         person.swapAt(sourceIndexPath.row, destinationIndexPath.row)
         
     }
     
-    @IBAction func editButton(_ sender: Any) {
+    override func tableView(_ tableView: UITableView, commit editingStyle: UITableViewCell.EditingStyle, forRowAt indexPath: IndexPath) {
+        if editingStyle == .delete{
+            person.remove(at: indexPath.row)
+            tableView.reloadData()
+        }
+    }
+    @IBAction func editButton(_ sender: UIBarButtonItem) {
         
-        if tableView.isEditing {
-            tableView.isEditing = false
+        if tableView.isEditing{
+            tableView.setEditing(false, animated: true)
+            sender.title = "Edit"
         }
         else{
-            tableView.isEditing = true
+            tableView.setEditing(true, animated: true)
+            sender.title = "Done"
         }
     }
 }
