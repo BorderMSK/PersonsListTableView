@@ -33,17 +33,14 @@ class SectionTableViewController: UITableViewController {
     
     override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let cell = tableView.dequeueReusableCell(withIdentifier: "Cell", for: indexPath)
+        
         let person = person[indexPath.section]
         
         if indexPath.row == 0 {
             cell.textLabel?.text = person.phoneNumber
+            cell.imageView?.image = UIImage(systemName: "phone")
         } else {
             cell.textLabel?.text = person.email
-        }
-        
-        if indexPath.row == 0 {
-            cell.imageView?.image = UIImage(systemName: "phone")
-        } else{
             cell.imageView?.image = UIImage(systemName: "envelope")
         }
         return cell
