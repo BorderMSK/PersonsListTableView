@@ -51,6 +51,7 @@ class MainTableViewController: UITableViewController {
     }
     
     @IBAction func editButton(_ sender: Any) {
+        
         if tableView.isEditing {
             tableView.isEditing = false
         }
