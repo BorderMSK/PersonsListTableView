@@ -35,13 +35,13 @@ class SectionTableViewController: UITableViewController {
         let cell = tableView.dequeueReusableCell(withIdentifier: "Cell", for: indexPath)
         let person = person[indexPath.section]
         
-        if indexPath.row == 0{
+        if indexPath.row == 0 {
             cell.textLabel?.text = person.phoneNumber
         } else {
             cell.textLabel?.text = person.email
         }
         
-        if indexPath.row % 2 == 0 {
+        if indexPath.row == 0 {
             cell.imageView?.image = UIImage(systemName: "phone")
         } else{
             cell.imageView?.image = UIImage(systemName: "envelope")
