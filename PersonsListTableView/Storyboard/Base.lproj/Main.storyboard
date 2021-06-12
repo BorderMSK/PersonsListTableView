@@ -42,7 +42,7 @@
                         </barButtonItem>
                         <barButtonItem key="rightBarButtonItem" systemItem="add" id="NcD-nn-khu">
                             <connections>
-                                <segue destination="AYo-1Q-GMS" kind="show" id="c5P-bi-VZE"/>
+                                <segue destination="AYo-1Q-GMS" kind="show" identifier="" id="c5P-bi-VZE"/>
                             </connections>
                         </barButtonItem>
                     </navigationItem>
@@ -298,8 +298,16 @@
                         </constraints>
                     </view>
                     <navigationItem key="navigationItem" title="Add new person" id="qlj-dq-ndQ">
-                        <barButtonItem key="leftBarButtonItem" systemItem="cancel" id="8WT-Sm-siK"/>
-                        <barButtonItem key="rightBarButtonItem" systemItem="save" id="hV5-qP-pI2"/>
+                        <barButtonItem key="leftBarButtonItem" systemItem="cancel" id="8WT-Sm-siK">
+                            <connections>
+                                <action selector="cancelButton:" destination="xjq-6T-TtJ" id="eSB-Ir-eZo"/>
+                            </connections>
+                        </barButtonItem>
+                        <barButtonItem key="rightBarButtonItem" systemItem="save" id="hV5-qP-pI2">
+                            <connections>
+                                <segue destination="lvK-jT-eBE" kind="unwind" unwindAction="unwindSegue:" id="fj6-ZE-s7E"/>
+                            </connections>
+                        </barButtonItem>
                     </navigationItem>
                     <connections>
                         <outlet property="addEmailTextField" destination="kZg-l1-7hM" id="uAc-tV-POA"/>
@@ -309,6 +317,7 @@
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="jfz-gI-NBu" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+                <exit id="lvK-jT-eBE" userLabel="Exit" sceneMemberID="exit"/>
             </objects>
             <point key="canvasLocation" x="3125" y="808"/>
         </scene>

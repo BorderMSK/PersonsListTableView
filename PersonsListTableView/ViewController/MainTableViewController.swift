@@ -74,4 +74,12 @@ class MainTableViewController: UITableViewController {
             sender.title = "Done"
         }
     }
+    
+    @IBAction func unwindSegue(_ segue: UIStoryboardSegue){
+        guard let newPersonVC = segue.source as? AddNewPerson else { return }
+        
+        newPersonVC.saveNewPerson()
+        person.append(newPersonVC.newPerson!)
+        tableView.reloadData()
+    }
 }

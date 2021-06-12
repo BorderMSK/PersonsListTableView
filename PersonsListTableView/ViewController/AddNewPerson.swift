@@ -14,7 +14,7 @@ class AddNewPerson: UIViewController{
     @IBOutlet weak var addPhoneNumberTextField: UITextField!
     @IBOutlet weak var addEmailTextField: UITextField!
     
-    var person: Person!
+    var newPerson: Person?
     
     override func viewDidLoad() {
         super .viewDidLoad()
@@ -24,6 +24,11 @@ class AddNewPerson: UIViewController{
 //        textField.resignFirstResponder()
 //        return true
 //    }
-
+    @IBAction func cancelButton(_ sender: Any) {
+        dismiss(animated: true)
+    }
     
+    func saveNewPerson(){
+        newPerson = Person(name: addNameTextField.text!, surname: addSurnameTextField.text!, phoneNumber: addPhoneNumberTextField.text!, email: addEmailTextField.text!)
+    }
 }
