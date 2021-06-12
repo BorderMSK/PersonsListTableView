@@ -314,6 +314,7 @@
                         <outlet property="addNameTextField" destination="HRH-i3-IR1" id="gCF-ZM-cEH"/>
                         <outlet property="addPhoneNumberTextField" destination="LeA-CI-bCR" id="VVW-Cp-2sT"/>
                         <outlet property="addSurnameTextField" destination="lZ7-Sj-6xK" id="lJg-kJ-LpC"/>
+                        <outlet property="saveButton" destination="hV5-qP-pI2" id="DEd-pK-vjg"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="jfz-gI-NBu" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
