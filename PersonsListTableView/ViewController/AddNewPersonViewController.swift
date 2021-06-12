@@ -25,6 +25,11 @@ class AddNewPersonViewController: UIViewController{
         addNameTextField.addTarget(self, action: #selector(textFieldChaged), for: .editingChanged)
     }
     
+    override func touchesBegan(_ touches: Set<UITouch>, with event: UIEvent?) {
+        super.touchesBegan(touches, with: event)
+        self.view.endEditing(true)
+    }
+    
     func textFieldShouldReturn(_ textField: UITextField) -> Bool {
         textField.resignFirstResponder()
         return true

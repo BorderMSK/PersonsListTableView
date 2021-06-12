@@ -44,7 +44,7 @@ class MainTableViewController: UITableViewController {
         vc.personData = data
         
     }
-    
+
     override func tableView(_ tableView: UITableView, canMoveRowAt indexPath: IndexPath) -> Bool {
         return true
     }
