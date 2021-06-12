@@ -76,8 +76,7 @@ class MainTableViewController: UITableViewController {
     }
     
     @IBAction func unwindSegue(_ segue: UIStoryboardSegue){
-        guard let newPersonVC = segue.source as? AddNewPerson else { return }
-        
+        guard let newPersonVC = segue.source as? AddNewPersonViewController else { return }
         newPersonVC.saveNewPerson()
         person.append(newPersonVC.newPerson!)
         tableView.reloadData()

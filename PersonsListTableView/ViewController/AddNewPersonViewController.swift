@@ -7,7 +7,7 @@
 
 import UIKit
 
-class AddNewPerson: UIViewController{
+class AddNewPersonViewController: UIViewController{
     
     @IBOutlet weak var addNameTextField: UITextField!
     @IBOutlet weak var addSurnameTextField: UITextField!

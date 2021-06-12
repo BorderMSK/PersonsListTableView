@@ -211,7 +211,7 @@
         <!--Add new person-->
         <scene sceneID="jlq-A2-L7e">
             <objects>
-                <viewController id="xjq-6T-TtJ" customClass="AddNewPerson" customModule="PersonsListTableView" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="xjq-6T-TtJ" customClass="AddNewPersonViewController" customModule="PersonsListTableView" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="9gZ-UV-hlh">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
